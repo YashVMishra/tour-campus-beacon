@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Building, Library, Coffee, Dumbbell, Monitor, Flask, Users, RotateCcw } from 'lucide-react';
+import { Building, Library, Coffee, Dumbbell, Monitor, Beaker, Users, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -56,8 +56,8 @@ const buildingsData: BuildingData[] = [
     name: 'BLR04',
     icon: Building,
     amenities: [
-      { name: 'R&D Lab', icon: Flask },
-      { name: 'Innovation Zone', icon: Flask }
+      { name: 'R&D Lab', icon: Beaker },
+      { name: 'Innovation Zone', icon: Beaker }
     ],
     color: 'from-purple-500 to-pink-600',
     bgGradient: 'bg-gradient-to-br from-purple-50 to-pink-50'
