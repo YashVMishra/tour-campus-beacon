@@ -92,7 +92,7 @@ const Index = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            🏢 Campus Tour
+            🏢 SAP Campus Tour
           </h1>
           <p className="text-blue-200 text-lg md:text-xl font-medium">
             Discover our office buildings
@@ -121,11 +121,10 @@ const Index = () => {
             return (
               <Card
                 key={building.id}
-                className={`cursor-pointer transform transition-all duration-500 hover:scale-[1.02] active:scale-[0.98] ${
-                  isExpanded 
-                    ? 'bg-white/95 backdrop-blur-lg shadow-2xl ring-2 ring-white/50' 
+                className={`cursor-pointer transform transition-all duration-500 hover:scale-[1.02] active:scale-[0.98] ${isExpanded
+                    ? 'bg-white/95 backdrop-blur-lg shadow-2xl ring-2 ring-white/50'
                     : 'bg-white/20 backdrop-blur-sm hover:bg-white/30 shadow-lg'
-                }`}
+                  }`}
                 onClick={() => handleBuildingClick(building.id)}
               >
                 <CardContent className="p-6">
@@ -135,30 +134,25 @@ const Index = () => {
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className={`text-2xl font-bold transition-colors duration-300 ${
-                        isExpanded ? 'text-gray-800' : 'text-white'
-                      }`}>
+                      <h3 className={`text-2xl font-bold transition-colors duration-300 ${isExpanded ? 'text-gray-800' : 'text-white'
+                        }`}>
                         {building.name}
                       </h3>
-                      <p className={`text-sm font-medium transition-colors duration-300 ${
-                        isExpanded ? 'text-gray-600' : 'text-blue-200'
-                      }`}>
+                      <p className={`text-sm font-medium transition-colors duration-300 ${isExpanded ? 'text-gray-600' : 'text-blue-200'
+                        }`}>
                         {isExpanded ? 'Tap to collapse' : 'Tap to explore'}
                       </p>
                     </div>
-                    <div className={`transform transition-transform duration-300 ${
-                      isExpanded ? 'rotate-180' : 'rotate-0'
-                    }`}>
-                      <div className={`w-3 h-3 border-r-2 border-b-2 transform rotate-45 ${
-                        isExpanded ? 'border-gray-600' : 'border-white'
-                      }`} />
+                    <div className={`transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : 'rotate-0'
+                      }`}>
+                      <div className={`w-3 h-3 border-r-2 border-b-2 transform rotate-45 ${isExpanded ? 'border-gray-600' : 'border-white'
+                        }`} />
                     </div>
                   </div>
 
                   {/* Building Amenities */}
-                  <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    isExpanded ? 'max-h-96 opacity-100 mt-6' : 'max-h-0 opacity-0'
-                  }`}>
+                  <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? 'max-h-96 opacity-100 mt-6' : 'max-h-0 opacity-0'
+                    }`}>
                     <div className={`p-4 rounded-xl ${building.bgGradient} border border-gray-200`}>
                       <h4 className="text-lg font-semibold text-gray-800 mb-4">
                         Available Amenities
