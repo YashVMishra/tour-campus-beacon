@@ -23,8 +23,8 @@ const buildingsData: BuildingData[] = [
     icon: Building,
     amenities: [
       { name: 'Cafeteria', icon: Coffee },
-      { name: 'Library', icon: Library },
-      { name: 'Lounge', icon: Users }
+      { name: 'Recreational Room', icon: Library },
+      { name: 'Badmintion Court', icon: Users }
     ],
     color: 'from-blue-500 to-purple-600',
     bgGradient: 'bg-gradient-to-br from-blue-50 to-purple-50'
@@ -34,8 +34,8 @@ const buildingsData: BuildingData[] = [
     name: 'BLR02',
     icon: Building,
     amenities: [
-      { name: 'Gym', icon: Dumbbell },
-      { name: 'Meditation Room', icon: Users }
+      { name: 'StartUp Studio', icon: Dumbbell },
+      { name: 'Corporate Lounge', icon: Users }
     ],
     color: 'from-green-500 to-teal-600',
     bgGradient: 'bg-gradient-to-br from-green-50 to-teal-50'
@@ -56,8 +56,8 @@ const buildingsData: BuildingData[] = [
     name: 'BLR04',
     icon: Building,
     amenities: [
-      { name: 'R&D Lab', icon: Beaker },
-      { name: 'Innovation Zone', icon: Beaker }
+      { name: 'Nap Room with Massage Chair', icon: Monitor },
+      { name: 'Corporate Lounge', icon: Users }
     ],
     color: 'from-purple-500 to-pink-600',
     bgGradient: 'bg-gradient-to-br from-purple-50 to-pink-50'
@@ -67,8 +67,8 @@ const buildingsData: BuildingData[] = [
     name: 'BLR05',
     icon: Building,
     amenities: [
-      { name: 'HR Desk', icon: Users },
-      { name: 'Admin Office', icon: Building }
+      { name: 'Hive Area', icon: Users },
+      { name: 'Experience Center', icon: Building }
     ],
     color: 'from-indigo-500 to-blue-600',
     bgGradient: 'bg-gradient-to-br from-indigo-50 to-blue-50'
@@ -122,8 +122,8 @@ const Index = () => {
               <Card
                 key={building.id}
                 className={`cursor-pointer transform transition-all duration-500 hover:scale-[1.02] active:scale-[0.98] ${isExpanded
-                    ? 'bg-white/95 backdrop-blur-lg shadow-2xl ring-2 ring-white/50'
-                    : 'bg-white/20 backdrop-blur-sm hover:bg-white/30 shadow-lg'
+                  ? 'bg-white/95 backdrop-blur-lg shadow-2xl ring-2 ring-white/50'
+                  : 'bg-white/20 backdrop-blur-sm hover:bg-white/30 shadow-lg'
                   }`}
                 onClick={() => handleBuildingClick(building.id)}
               >
