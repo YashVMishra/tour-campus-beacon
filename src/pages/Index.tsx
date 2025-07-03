@@ -24,7 +24,7 @@ const buildingsData: BuildingData[] = [
     amenities: [
       { name: 'Cafeteria', icon: Coffee },
       { name: 'Recreational Room', icon: Library },
-      { name: 'Badmintion Court', icon: Users }
+      { name: 'Badmintion / Volleyball / Tennis Court', icon: Users }
     ],
     color: 'from-blue-500 to-purple-600',
     bgGradient: 'bg-gradient-to-br from-blue-50 to-purple-50'
@@ -34,6 +34,7 @@ const buildingsData: BuildingData[] = [
     name: 'BLR02',
     icon: Building,
     amenities: [
+      { name: 'Cafeteria Berp', icon: Coffee },
       { name: 'StartUp Studio', icon: Dumbbell },
       { name: 'Corporate Lounge', icon: Users }
     ],
@@ -45,7 +46,7 @@ const buildingsData: BuildingData[] = [
     name: 'BLR03',
     icon: Building,
     amenities: [
-      { name: 'IT Support', icon: Monitor },
+      { name: 'Cafeteria', icon: Coffee },
       { name: 'Conference Halls', icon: Users }
     ],
     color: 'from-orange-500 to-red-600',
@@ -56,7 +57,7 @@ const buildingsData: BuildingData[] = [
     name: 'BLR04',
     icon: Building,
     amenities: [
-      { name: 'Nap Room with Massage Chair', icon: Monitor },
+      { name: 'Nap Room / Sleeping Pods', icon: Monitor },
       { name: 'Corporate Lounge', icon: Users }
     ],
     color: 'from-purple-500 to-pink-600',
@@ -67,6 +68,7 @@ const buildingsData: BuildingData[] = [
     name: 'BLR05',
     icon: Building,
     amenities: [
+      {name: 'Cafe 5', icon: Coffee}, 
       { name: 'Hive Area', icon: Users },
       { name: 'Experience Center', icon: Building }
     ],
