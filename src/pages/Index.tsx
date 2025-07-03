@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Building, Library, Coffee, Dumbbell, Monitor, Beaker, Users, RotateCcw } from 'lucide-react';
+import { Building, Library, Coffee, Dumbbell, Monitor, Beaker, Users, RotateCcw, } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -22,7 +22,7 @@ const buildingsData: BuildingData[] = [
     name: 'BLR01',
     icon: Building,
     amenities: [
-      { name: 'Cafeteria', icon: Coffee },
+      { name: 'Medical Room / Bunker Beds', icon: Beaker },
       { name: 'Recreational Room', icon: Library },
       { name: 'Badmintion / Volleyball / Tennis Court', icon: Users }
     ],
@@ -34,7 +34,7 @@ const buildingsData: BuildingData[] = [
     name: 'BLR02',
     icon: Building,
     amenities: [
-      { name: 'Cafeteria Berp', icon: Coffee },
+      { name: 'Cafe BERP', icon: Coffee },
       { name: 'StartUp Studio', icon: Dumbbell },
       { name: 'Corporate Lounge', icon: Users }
     ],
@@ -68,7 +68,8 @@ const buildingsData: BuildingData[] = [
     name: 'BLR05',
     icon: Building,
     amenities: [
-      {name: 'Cafe 5', icon: Coffee}, 
+      { name: 'Cafe 5', icon: Coffee}, 
+      { name: 'Audimax', icon: Building}, 
       { name: 'Hive Area', icon: Users },
       { name: 'Experience Center', icon: Building }
     ],
